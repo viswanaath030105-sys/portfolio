@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Viswanaath V — Supply Chain & Procurement Portfolio</title>
+<meta name="description" content="MBA (Logistics & Marketing) fresher with SAP S/4HANA MM training. Supply chain, procurement and vendor management.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#f7f5f0; --card:#ffffff; --ink:#1b2420; --muted:#5d6a63; --line:#e3dfd5;
+  --accent:#1f6f54; --accent-soft:#e2f0ea; --warm:#c8782f;
+}
+@media (prefers-color-scheme:dark){
+  :root{--bg:#121714; --card:#1a211d; --ink:#eef1ee; --muted:#9aa8a0; --line:#2a342e; --accent:#59c79a; --accent-soft:#1d2f27; --warm:#e0a15e;}
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:64px}
+body{font-family:'DM Sans',system-ui,sans-serif;background:var(--bg);color:var(--ink);line-height:1.6;font-size:16px;-webkit-font-smoothing:antialiased}
+h1,h2,h3{font-family:'Fraunces',Georgia,serif;font-weight:600;line-height:1.15;letter-spacing:-.01em}
+a{color:var(--accent);text-decoration:none}
+.wrap{max-width:960px;margin:0 auto;padding:0 20px}
+nav{position:sticky;top:0;z-index:10;background:color-mix(in srgb,var(--bg) 88%,transparent);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+nav .wrap{display:flex;align-items:center;justify-content:space-between;height:56px;gap:12px}
+.logo{font-family:'Fraunces',serif;font-weight:600;color:var(--ink);font-size:18px;white-space:nowrap}
+.links{display:flex;gap:18px;overflow-x:auto;scrollbar-width:none}
+.links::-webkit-scrollbar{display:none}
+.links a{color:var(--muted);font-size:14px;font-weight:500;white-space:nowrap}
+.links a:hover{color:var(--accent)}
+header.hero{padding:56px 0 40px}
+.eyebrow{display:inline-block;font-size:13px;font-weight:600;color:var(--accent);background:var(--accent-soft);padding:5px 12px;border-radius:99px;margin-bottom:18px}
+.hero h1{font-size:clamp(38px,9vw,64px);margin-bottom:14px}
+.hero h1 span{color:var(--accent)}
+.hero p.lead{font-size:clamp(17px,3.6vw,20px);color:var(--muted);max-width:620px;margin-bottom:26px}
+.btns{display:flex;flex-wrap:wrap;gap:10px}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:12px 20px;border-radius:12px;font-weight:600;font-size:15px;border:1px solid var(--line);color:var(--ink);background:var(--card)}
+.btn.primary{background:var(--accent);color:#fff;border-color:var(--accent)}
+@media (prefers-color-scheme:dark){.btn.primary{color:#0c1410}}
+.stats{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;margin-top:36px}
+@media(min-width:640px){.stats{grid-template-columns:repeat(4,1fr)}}
+.stat{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:16px}
+.stat b{display:block;font-family:'Fraunces',serif;font-size:28px;color:var(--accent)}
+.stat small{color:var(--muted);font-size:13px}
+section{padding:44px 0;border-top:1px solid var(--line)}
+section h2{font-size:clamp(26px,6vw,34px);margin-bottom:22px}
+.sub{color:var(--muted);margin:-12px 0 22px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:22px}
+.grid{display:grid;gap:14px}
+@media(min-width:700px){.grid.two{grid-template-columns:1fr 1fr}}
+.card h3{font-size:19px;margin-bottom:10px}
+.tags{display:flex;flex-wrap:wrap;gap:7px}
+.tag{font-size:13px;padding:5px 11px;border-radius:99px;background:var(--accent-soft);color:var(--accent);font-weight:500}
+.tag.warm{background:color-mix(in srgb,var(--warm) 15%,transparent);color:var(--warm)}
+.flow{display:flex;gap:0;overflow-x:auto;padding:4px 0 10px;scroll-snap-type:x mandatory}
+.step{flex:0 0 auto;min-width:112px;scroll-snap-align:start;text-align:center;position:relative;padding:0 6px}
+.step i{display:grid;place-items:center;width:44px;height:44px;margin:0 auto 8px;border-radius:50%;background:var(--accent);color:#fff;font-style:normal;font-weight:600;font-size:15px}
+@media (prefers-color-scheme:dark){.step i{color:#0c1410}}
+.step span{font-size:13px;font-weight:500;line-height:1.3;display:block}
+.step::after{content:"";position:absolute;top:22px;left:calc(50% + 28px);right:calc(-50% + 28px);height:2px;background:var(--line)}
+.step:last-child::after{display:none}
+.job{padding:22px 0;border-bottom:1px solid var(--line)}
+.job:first-of-type{padding-top:0}
+.job:last-child{border-bottom:0;padding-bottom:0}
+.job .meta{display:flex;flex-wrap:wrap;justify-content:space-between;gap:4px 12px;margin-bottom:10px}
+.job h3{font-size:20px}
+.job .when{font-size:14px;color:var(--warm);font-weight:600}
+.job .co{color:var(--muted);font-size:15px;margin-bottom:10px}
+ul.clean{list-style:none;display:grid;gap:9px}
+ul.clean li{padding-left:20px;position:relative;font-size:15px}
+ul.clean li::before{content:"";position:absolute;left:0;top:10px;width:7px;height:7px;border-radius:50%;background:var(--accent)}
+.edu{display:grid;gap:12px}
+.edu .row{display:flex;justify-content:space-between;gap:12px;align-items:flex-start;flex-wrap:wrap}
+.edu .row b{font-size:16px}
+.edu .row div small{color:var(--muted);display:block;font-size:14px}
+.score{font-family:'Fraunces',serif;font-size:22px;color:var(--accent);white-space:nowrap}
+.badge{display:inline-block;margin-top:4px;font-size:12px;font-weight:600;color:var(--warm);background:color-mix(in srgb,var(--warm) 15%,transparent);padding:3px 9px;border-radius:99px}
+.contact-list{display:grid;gap:10px}
+.contact-list a,.contact-list div{display:flex;align-items:center;gap:12px;padding:14px 16px;border:1px solid var(--line);border-radius:14px;background:var(--card);color:var(--ink);font-size:15px;word-break:break-all}
+.contact-list .contact-row{padding:0}
+.contact-list .contact-row>a{flex:1;min-width:0;border:0;border-radius:14px 0 0 14px;padding:14px 16px}
+.contact-row .copy{margin-right:12px;flex:0 0 auto}
+.contact-list small{display:block;color:var(--muted);font-size:12px}
+footer{padding:28px 0 40px;color:var(--muted);font-size:13px;text-align:center;border-top:1px solid var(--line)}
+.copy{cursor:pointer;font:inherit;background:none;border:0;color:var(--accent);font-weight:600;font-size:13px;margin-left:auto}
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="wrap">
+    <a class="logo" href="#top">Viswanaath V</a>
+    <div class="links">
+      <a href="#about">About</a><a href="#skills">Skills</a><a href="#experience">Experience</a><a href="#projects">Projects</a><a href="#education">Education</a><a href="#contact">Contact</a>
+    </div>
+  </div>
+</nav>
+
+<header class="hero" id="top">
+  <div class="wrap">
+    <span class="eyebrow">Open to supply chain, procurement &amp; logistics roles</span>
+    <h1>Hi, I'm Viswanaath.<br><span>Supply chain</span> &amp; procurement.</h1>
+    <p class="lead">MBA (Logistics &amp; Marketing) fresher with hands-on SAP S/4HANA Materials Management experience, from purchase requisition to invoice verification.</p>
+    <div class="btns">
+      <a class="btn primary" href="#contact">Get in touch</a>
+      <a class="btn" href="https://linkedin.com/in/viswanaath-v" target="_blank" rel="noopener">LinkedIn ↗️</a>
+    </div>
+    <div class="stats">
+      <div class="stat"><b>2</b><small>Internships in 2026</small></div>
+      <div class="stat"><b>86.78%</b><small>B.Sc. · University Rank Holder</small></div>
+      <div class="stat"><b>81.7%</b><small>MBA so far (2025–27)</small></div>
+      <div class="stat"><b>3</b><small>Languages spoken</small></div>
+    </div>
+  </div>
+</header>
+
+<section id="about">
+  <div class="wrap">
+    <h2>About me</h2>
+    <div class="card">
+      <p>I trained in SAP S/4HANA MM for supply chain and procurement operations: vendor management, purchase order tracking, inventory and material availability. During my internship I worked with Purchase Requisition, RFQ, Purchase Order, Source List, Info Record and delivery scheduling.</p>
+      <p style="margin-top:12px">I'm strong in MS Excel for data handling, reports and formulas. My B.Sc. Poultry Science degree gave me plant exposure to production planning and quality control (HACCP, FSSC 22000). I coordinate well with vendors and cross-functional teams, solve supply issues and learn quickly in fast-paced environments.</p>
+      <p style="margin-top:14px;color:var(--muted);font-size:14px">📍 Udumalpet, Tamil Nadu, India</p>
+    </div>
+  </div>
+</section>
+
+<section id="skills">
+  <div class="wrap">
+    <h2>Core skills</h2>
+    <div class="grid two">
+      <div class="card"><h3>Supply Chain &amp; Procurement</h3>
+        <div class="tags"><span class="tag">Procurement &amp; Sourcing</span><span class="tag">Procure-to-Pay</span><span class="tag">Purchase Orders</span><span class="tag">RFQ / Quotations</span><span class="tag">Contracts</span><span class="tag">Scheduling Agreements</span><span class="tag">Material Planning</span></div></div>
+      <div class="card"><h3>Vendor Management</h3>
+        <div class="tags"><span class="tag">Vendor Master Data</span><span class="tag">Vendor Coordination</span><span class="tag">Source List</span><span class="tag">Info Record</span><span class="tag">Supplier Documentation</span><span class="tag">Lead Time &amp; Delivery Follow-up</span></div></div>
+      <div class="card"><h3>Inventory &amp; Logistics</h3>
+        <div class="tags"><span class="tag">Inventory Management</span><span class="tag">Goods Receipt</span><span class="tag">Goods Issue</span><span class="tag">Material Availability</span><span class="tag">Physical Inventory</span><span class="tag">Warehouse &amp; Material Handling</span></div></div>
+      <div class="card"><h3>Tools</h3>
+        <div class="tags"><span class="tag warm">SAP S/4HANA MM</span><span class="tag warm">MS Excel</span><span class="tag warm">SCM Reporting</span><span class="tag warm">Canva</span></div></div>
+      <div class="card" style="grid-column:1/-1"><h3>Professional</h3>
+        <div class="tags"><span class="tag">Communication</span><span class="tag">Logical Thinking</span><span class="tag">Problem-Solving</span><span class="tag">Cross-Functional Coordination</span><span class="tag">Team Supervision</span><span class="tag">Quality Management (HACCP, FSSC 22000)</span></div></div>
+    </div>
+
+    <h3 style="margin:30px 0 4px;font-size:21px">The Procure-to-Pay cycle I worked on</h3>
+    <p class="sub" style="margin-top:0">Swipe to follow the flow.</p>
+    <div class="card"><div class="flow">
+      <div class="step"><i>1</i><span>Purchase Requisition</span></div>
+      <div class="step"><i>2</i><span>RFQ &amp; Quotation</span></div>
+      <div class="step"><i>3</i><span>Purchase Order</span></div>
+      <div class="step"><i>4</i><span>Goods Receipt</span></div>
+      <div class="step"><i>5</i><span>Invoice Verification</span></div>
+    </div></div>
+  </div>
+</section>
+
+<section id="experience">
+  <div class="wrap">
+    <h2>Internship experience</h2>
+    <div class="card">
+      <div class="job">
+        <div class="meta"><h3>SAP S/4HANA Supply Chain Cloud Intern</h3><span class="when">Jun 2026 – Aug 2026</span></div>
+        <div class="co">TekCactus · SAP Cloud Solution Company</div>
+        <ul class="clean">
+          <li>Supported supply chain and procurement operations across the Procure-to-Pay cycle: Purchase Requisition, RFQ, Purchase Order, Contracts and Scheduling Agreements.</li>
+          <li>Managed vendor and material master data (Material Master, Business Partner, Info Record, Source List, Service Master), keeping supplier data accurate.</li>
+          <li>Handled inventory management: Goods Receipt, Goods Issue, Transfer Postings, Physical Inventory and Invoice Verification to track material availability.</li>
+          <li>Configured organisational structure (Plant, Storage Location, Purchasing Organisation, Purchasing Group) and Release Procedure for purchase approvals.</li>
+          <li>Built a Pricing Procedure (condition tables, access sequences, condition types) to balance cost in purchasing.</li>
+          <li>Worked on MM-FICO account determination, MM-PP reorder point planning, and special procurement (Subcontracting, Consignment, Pipeline).</li>
+        </ul>
+      </div>
+      <div class="job">
+        <div class="meta"><h3>Digital Marketing Intern</h3><span class="when">Jun 2026</span></div>
+        <div class="co">Profenaa Infotech</div>
+        <ul class="clean">
+          <li>Performed SEO and keyword research, managed Google Business Profile and created content with Canva to improve online visibility.</li>
+          <li>Executed social media campaigns (Facebook, Instagram) and supported brand awareness strategy.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="projects">
+  <div class="wrap">
+    <h2>Projects</h2>
+    <div class="card">
+      <div style="display:flex;flex-wrap:wrap;justify-content:space-between;gap:4px 12px;margin-bottom:10px">
+        <h3 style="margin:0">Survey on Broiler Retailer Outlets</h3><span style="color:var(--warm);font-weight:600;font-size:14px">Dec 2024 – Jan 2025</span>
+      </div>
+      <p style="font-size:15px">Collected and analyzed market and supplier-side data on consumer behavior and competitive strategies, coordinating with industry stakeholders to produce insights.</p>
+    </div>
+  </div>
+</section>
+
+<section id="education">
+  <div class="wrap">
+    <h2>Education &amp; achievements</h2>
+    <div class="card edu">
+      <div class="row"><div><b>MBA, Logistics &amp; Marketing</b><small>Sree Saraswathi Thyagaraja College · 2025 – 2027 (pursuing)</small></div><span class="score">81.7%</span></div>
+      <div class="row"><div><b>B.Sc. Poultry Science</b><small>Suguna Institute of Poultry Management · 2022 – 2025</small><span class="badge">University Rank Holder</span></div><span class="score">86.78%</span></div>
+      <div class="row"><div><b>Grade 12</b><small>S.K.P. HSS · 2021 – 2022</small></div><span class="score">82.6%</span></div>
+      <div class="row"><div><b>Grade 10</b><small>J.S.R. HSS · 2019 – 2020</small></div><span class="score">90.6%</span></div>
+    </div>
+
+    <h3 style="margin:30px 0 14px;font-size:21px">Certifications</h3>
+    <div class="grid two">
+      <div class="card"><h3 style="font-size:17px">ISO 22000:2018 &amp; FSSC 22000 V6</h3><small style="color:var(--muted)">Aspire Training &amp; Research</small></div>
+      <div class="card"><h3 style="font-size:17px">Applied Finance &amp; Industry Immersion</h3><small style="color:var(--muted)">R.A. Podar, Mumbai</small></div>
+      <div class="card"><h3 style="font-size:17px">Food Science Technology and Design Practice</h3><small style="color:var(--muted)">NPTEL</small></div>
+      <div class="card"><h3 style="font-size:17px">Green Ambassador</h3><small style="color:var(--muted)">DRDA Coimbatore · led a waste-segregation awareness program</small></div>
+    </div>
+
+    <h3 style="margin:30px 0 12px;font-size:21px">Languages</h3>
+    <div class="tags"><span class="tag">Tamil · Native</span><span class="tag">English · Fluent</span><span class="tag">Telugu · Conversational</span></div>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="wrap">
+    <h2>Let's connect</h2>
+    <p class="sub">Open to roles in supply chain, procurement, vendor management and logistics.</p>
+    <div class="contact-list">
+      <div class="contact-row">
+        <a href="mailto:viswanaath030105@gmail.com"><span>✉️</span><span><small>Email</small>viswanaath030105@gmail.com</span></a>
+        <button class="copy" data-copy="viswanaath030105@gmail.com" type="button" aria-label="Copy email address">Copy</button>
+      </div>
+      <div class="contact-row">
+        <a href="tel:+918925841321"><span>📞</span><span><small>Phone</small>+91 8925841321</span></a>
+        <button class="copy" data-copy="+918925841321" type="button" aria-label="Copy phone number">Copy</button>
+      </div>
+      <a href="https://linkedin.com/in/viswanaath-v" target="_blank" rel="noopener"><span>💼</span><span><small>LinkedIn</small>linkedin.com/in/viswanaath-v</span></a>
+      <div><span>📍</span><span><small>Location</small>Udumalpet, Tamil Nadu</span></div>
+    </div>
+  </div>
+</section>
+
+<footer><div class="wrap">© 2026 Viswanaath V</div></footer>
+
+<script>
+document.querySelectorAll('.copy').forEach(function(b){
+  b.addEventListener('click',function(){
+    var t=b.dataset.copy;
+    var showCopied=function(){b.textContent='Copied';setTimeout(function(){b.textContent='Copy'},1500)};
+    if(navigator.clipboard && window.isSecureContext){
+      navigator.clipboard.writeText(t).then(showCopied);
+    }else{
+      var input=document.createElement('textarea');
+      input.value=t;
+      input.style.position='fixed';
+      input.style.opacity='0';
+      document.body.appendChild(input);
+      input.select();
+      try{if(document.execCommand('copy'))showCopied()}finally{document.body.removeChild(input)}
+    }
+  });
+});
+</script>
+</body>
+</html>
